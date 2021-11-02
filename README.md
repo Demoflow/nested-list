@@ -27,7 +27,7 @@ yarn add @editorjs/nested-list
 Include module at your application
 
 ```javascript
-import NestedList from '@editorjs/nested-list';
+import NestedList from "@editorjs/nested-list";
 ```
 
 ### Load from CDN
@@ -60,7 +60,9 @@ var editor = EditorJS({
 
 ## Config Params
 
-This Tool has no config params
+| Field            | Type     | Description                                    |
+| ---------------- | -------- | ---------------------------------------------- |
+| defaultListStyle | `string` | type of default list: `ordered` or `unordered` |
 
 ## Tool's settings
 
@@ -70,18 +72,17 @@ You can choose list`s type.
 
 ## Output data
 
-| Field | Type      | Description                              |
-| ----- | --------- | ---------------------------------------- |
-| style | `string`  | type of a list: `ordered` or `unordered` |
-| items | `Item[]`  | the array of list's items                |
+| Field | Type     | Description                              |
+| ----- | -------- | ---------------------------------------- |
+| style | `string` | type of a list: `ordered` or `unordered` |
+| items | `Item[]` | the array of list's items                |
 
 Object `Item`:
 
-| Field   | Type      | Description               |
-| ------- | --------- | ------------------------- |
-| content | `string`  | item's string content     |
-| items   | `Item[]`  | the array of list's items |
-
+| Field   | Type     | Description               |
+| ------- | -------- | ------------------------- |
+| content | `string` | item's string content     |
+| items   | `Item[]` | the array of list's items |
 
 ```json
 {
