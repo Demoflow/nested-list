@@ -1,6 +1,6 @@
 {
   "name": "@demoflow/nested-list",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Nested list Tool for EditorJS",
   "main": "dist/nested-list.js",
   "repository": {
@@ -14,7 +14,9 @@
     "build:dev": "webpack --mode development --watch",
     "lint": "eslint src/ --quiet",
     "lint:errors": "eslint src/ --quiet",
-    "lint:fix": "eslint src/ --fix"
+    "lint:fix": "eslint src/ --fix",
+    "clean:dist": "rm -rf dist/",
+    "publish:dist": "npm run clean:dist && yarn build && npm publish"
   },
   "devDependencies": {
     "css-loader": "^5.0.2",
